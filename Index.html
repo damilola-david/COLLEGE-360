@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | College360 Africa</title>
+    <!--external css libaries-->
+    <link rel="stylesheet" href="CSS/main.min.css" />
+    <link rel="stylesheet" href="CSS/animate.min.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!--
+     Please note 
+     Start --- Beginning of code
+     End --- End of code
+-->
+
+  <body class="" >
+    <!--<div class="modal-wrapper">
+      <div
+      class="bg-white d-flex align-items-center px-4 border border-2 border-black modals modals-hide"
+      id="mod"
+    >
+      <div>
+        <h1 class="text-capitalize h3 mb-3">cookies improve your experience</h1>
+        <p>
+          We use cookies and similar technologies, both college360 and third
+          party, to personalize your experience across our website and partner
+          sites. Select your preferences below. You can make changes anytime by
+          visiting Privacy & Cookies Settings at the bottom of the page. For
+          more information, see our Privacy Policy.
+        </p>
+        <button class="accept btn btn-dark py-2 px-3 rounded-0 text-capitalize ">accept all</button>
+        <button class="accept btn btn-outline-dark py-2 px-3 rounded-0 text-capitalize ms-3">accept neccesary cookies</button>
+      </div>
+      <i
+        class="fa-solid fa-xmark fs-3 border border-1 border-black py-2 px-3"
+        style="position: absolute; top: 10px; right: 20px; cursor: pointer"
+        id="cancel"
+      ></i>
+    </div>
+    </div>-->
+    <!--navbar for medium screens and above start-->
+    <nav
+      class="navbar navbar-expand-lg bg-light border-bottom bg-transparent py-3 border-2 border-dark"
+      id="navbar"
+    >
+      <div class="container-lg">
+        <a href="index.html" class="navbar-brand text-uppercase"
+          ><img
+            src="IMAGES/logo.png"
+            alt=""
+            style="height: 30px; width: 30px"
+          />
+          college 360</a
+        >
+        <button
+          class="d-lg-none border-0 bg-transparent"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <img src="IMAGES/menu-outline.svg" alt="" style="width: 30px" />
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0 text-capitalize">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-black">admissions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-black">academic</a>
+            </li>
+            <li class="nav-item">
+              <a href="tuition.html" class="nav-link text-black">tuition</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-black">about us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-black">Extra-curricular</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-black">Newsletter</a>
+            </li>
+          </ul>
+          <button
+            class="bg-maincolor text-white border-0 text-capitalize me-2 py-2 px-4"
+            onclick="window.location.href='login.html'"
+          >
+            login
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!--nav end for medium screens and above-->
+
+    <!--nav start for small screens -->
+    <div
+      class="offcanvas offcanvas-start w-100"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">MENU</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0 text-capitalize">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-black">admissions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-black">academic</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-black">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-black">about us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-black">Extra-curricular</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-black">Newsletter</a>
+          </li>
+        </ul>
+        <button class="btn-warning text-capitalize me-2 py-2 px-4 btn-color">
+          login
+        </button>
+      </div>
+    </div>
+    <!--nav end for small screens-->
+
+    <!--back to top button-->
+    <div class="backTop backTop-remove" id="back">
+      <a href="#hero-section"
+        ><i class="fa-solid fa-arrow-up rounded-1 px-2 py-2"></i
+      ></a>
+    </div>
+    <!--hero-section start-->
+    <section id="hero-section" class="border-bottom border-2 border-dark">
+      <div class="container-lg">
+        <div class="row">
+          <div
+            class="col-md-6 border-end border-2 border-dark d-flex justify-content-center align-items-center py-3 px-4"
+          >
+            <div class="py-2 py-md-0">
+              <h1 class="fw-bolder text-uppercase mb-3">
+                A school that creates process in a world of
+                <span id="wordChange"></span>
+              </h1>
+              <p class="text-capitalize text-black-50 mb-3 lh-base">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore ipsam assumenda iusto doloribus vero maiores libero.
+                Accusamus velit dolorem illum?
+              </p>
+              <button class="btn-danger py-2 px-3 btn-color">Enroll now</button>
+            </div>
+          </div>
+          <div
+            class="col-md-6 d-flex justify-content-center justify-content-lg-end py-3"
+          >
+            <img
+              src="IMAGES/image (2).jpg"
+              alt="student standing carring schoolbag"
+              class="hero-image border border-2 border-black"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--hero-ssection end-->
+
+    <!--learning designed for real life application start-->
+    <section id="qualities" class="">
+      <div class="container-lg py-5">
+        <h2 class="text-capitalize fw-blod py-2 text-center mb-4">
+          learning designed for real life applications
+        </h2>
+        <div
+          class="row gap-3 text-light text-capitalize fw-bolder fs-5 justify-content-center j"
+        >
+          <div class="col-md-3 reduce border border-2 border-black" id="first">
+            <p
+              style="background-color: #fff; color: #000"
+              class="border border-2 border-black p-1"
+            >
+              creativity with technology
+            </p>
+          </div>
+          <div class="col-md-3 reduce border border-2 border-black" id="second">
+            <p
+              style="background-color: #fff; color: #000"
+              class="border border-2 border-black p-1"
+            >
+              collaborative education
+            </p>
+          </div>
+          <div class="col-md-3 reduce border border-2 border-black" id="third">
+            <p
+              style="background-color: #fff; color: #000"
+              class="border border-2 border-black p-1"
+            >
+              leadership
+            </p>
+          </div>
+          <div class="col-md-3 reduce border border-2 border-black" id="fourth">
+            <p
+              style="background-color: #fff; color: #000"
+              class="border border-2 border-black p-1"
+            >
+              reading culture
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--learning designed for real life application end-->
+
+    <!--everyone gets a skill start-->
+    <section id="getskill">
+      <div class="container-lg py-5">
+        <div
+          class="row justify-content-center align-items-center gap-3 gap-md-0"
+        >
+          <div class="col-md-6 px-4">
+            <h2 class="h2 text-capitalize display-6">
+              every student gets a <br> skill to learn
+            </h2>
+            <p class="text-capitalize text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+              sequi cum adipisci consectetur delectus molestias?
+            </p>
+            <a
+              href="#"
+              class="text-decoration-none text-capitalize fs-5 fw-bold learn"
+              style="color: #a23803"
+              >learn more </a
+            ><i
+              class="fa fa-arrow-right fs-5 ms-1 fw-bold"
+              style="color: #a23803"
+            ></i>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-6">
+                <img
+                  src="IMAGES/image (3).jpg"
+                  alt=""
+                  class="border border-black border-2"
+                  style="
+                    width: 100% !important;
+                    height: 100%;
+                    object-fit: cover;
+                  "
+                />
+              </div>
+              <div class="col-6">
+                <div class="row gap-2">
+                  <div class="col-12">
+                    <img
+                      src="IMAGES/image7 (7).jpg"
+                      alt=""
+                      class="border border-black border-2"
+                      style="
+                        width: 100% !important;
+                        height: 100%;
+                        object-fit: cover;
+                      "
+                    />
+                  </div>
+                  <div class="col-12">
+                    <img
+                      src="IMAGES/image7 (4).jpg"
+                      alt=""
+                      class="border border-black border-2"
+                      style="
+                        width: 100% !important;
+                        height: 100%;
+                        object-fit: cover;
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--everyone gets a skill end-->
+
+    <!--trust us we have got the numbers start-->
+    <section id="who">
+      <div class="container px-3 px-md-0 py-5 text-capitalize">
+        <div class="row pt-4 gap-5 column-gap-2 column-gap-md-0">
+          <div class="col-md-6 video-cover">
+            <video
+              src="VIDEOS/pexels-artem-podrez-6996534-1280x720-30fps.mp4"
+              id="video"
+              poster="IMAGES/image (5).jpg"
+              class="border border-2 border-black"
+            ></video>
+            <div class="video-controls">
+              <i class="fa-solid fa-play videoplay" id="play"></i>
+              <div class="progr-wrapper">
+                <div class="progr">
+                  <div class="bar"></div>
+                  <i class="fa-solid fa-volume-up control"></i>
+                  <i class="fa-solid fa-gear control"></i>
+                  <i class="fa-solid fa-closed-captioning control"></i>
+                  <i class="fa-solid fa-expand control"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="">
+              <h3 class="h2 mb-3 fw-bold">trust us we have got the numbers</h3>
+              <p class="text-secondary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptatum possimus maxime nulla laboriosam similique obcaecati,
+                cumque animi sunt adipisci ea eveniet explicabo sequi
+                consequuntur voluptatibus!
+              </p>
+              <div class="row gap-0 gap-md-0 fs-3 pt-3">
+                <div class="col-6 col-md-3">
+                  <p>
+                    <span class="fw-bolder fs-1" style="color: #a23803"
+                      >500+</span
+                    >
+                    <br />students
+                  </p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <p>
+                    <span class="fw-bolder fs-1" style="color: #a23803"
+                      >50+</span
+                    >
+                    <br />teachers
+                  </p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <p>
+                    <span class="fw-bolder fs-1" style="color: #a23803"
+                      >20+</span
+                    >
+                    <br />awards
+                  </p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <p>
+                    <span class="fw-bolder fs-1" style="color: #a23803"
+                      >98%</span
+                    >
+                    <br />success
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--trust us we have got the numbers start-->
+
+    <!--join now start-->
+    <section>
+      <div class="container-lg py-5 text-center bg-black text-light">
+        <h2 class="text-capitalize mb-2">2023/2024 admission is in progress</h2>
+        <button class="btn btn-outline-maincolor p-2 text-capitalize rounded-0">
+          enroll now
+        </button>
+      </div>
+    </section>
+    <!--join now end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="container-lg py-5">
+        <div class="row text-capitalize">
+          <div class="col-md-6">
+            <h1 class="mb-4">college 360AFRICA</h1>
+            <i class="fa-brands fs-4 me-3 mb-3 fa-facebook"></i>
+            <i class="fa-brands fs-4 me-3 mb-3 fa-twitter"></i>
+            <i class="fa-brands fs-4 me-3 mb-3 fa-instagram"></i>
+            <i class="fa-brands fs-4 me-3 mb-3 fa-youtube"></i>
+            <p>+2348035937757</p>
+            <p>+2348035937757</p>
+            <p>college360Africa@gmail.com</p>
+            <h4 class="d-inline">&copy;2023 damsDdeveloper</h4>
+          </div>
+          <div class="col-md-6">
+            <div class="row justify-content-end">
+              <div class="col-md-3">
+                <h3>links</h3>
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  admissions</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  gallery</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  extra-curricular</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  academics</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  mission & vision</a
+                >
+              </div>
+              <div class="col-md-3">
+                <h3>about</h3>
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  news</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  careers</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  awards</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  newsletters</a
+                >
+              </div>
+              <div class="col-md-3">
+                <h3>portal</h3>
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  student</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  teachers</a
+                >
+                <a
+                  href="#"
+                  class="d-block mb-3 text-decoration-none text-black-50"
+                >
+                  parent</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <!--external js libaries-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
